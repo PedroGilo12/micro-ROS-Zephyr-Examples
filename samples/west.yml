@@ -1,0 +1,35 @@
+manifest:
+  remotes:
+    - name: zephyrproject-rtos
+      url-base: https://github.com/zephyrproject-rtos
+
+  projects:
+    - name: zephyr
+      remote: zephyrproject-rtos
+      revision: v4.2.0
+      import:
+        name-allowlist:
+          - cmsis_6
+          - mcuboot
+          - hal_espressif
+
+    - name: micro-ros-zephyr-module
+      path: modules/lib/micro-ros-zephyr-module
+      url: https://github.com/PedroGilo12/micro_ros_zephyr_module
+      revision: jazzy-zephyr-v4.2.0
+
+    - name: mbedtls
+      remote: zephyrproject-rtos
+      revision: c5b06d89c9c498d8fc8659ce31f7e53137b6270f
+      path: modules/crypto/mbedtls
+      groups:
+        - crypto
+    
+    - name: mcuboot
+      remote: zephyrproject-rtos
+      revision: 96576b341ee19f1c3af6622256b0d4f3d408e1e3
+      path: bootloader/mcuboot
+      groups:
+        - bootloader
+  self:
+    path: samples

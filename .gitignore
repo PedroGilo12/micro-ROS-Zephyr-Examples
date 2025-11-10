@@ -1,0 +1,100 @@
+# =====================================================
+# General
+# =====================================================
+*.swp
+*.swo
+*.bak
+*.log
+*.tmp
+*.pyc
+__pycache__/
+.DS_Store
+Thumbs.db
+
+# =====================================================
+# Build artifacts
+# =====================================================
+build/
+build-*/
+build_*/
+out/
+zephyr/
+*.elf
+*.bin
+*.hex
+*.map
+*.lst
+*.dmp
+
+# =====================================================
+# West (Zephyr)
+# =====================================================
+# West workspace folders
+/.west/
+west/
+.west/
+# Zephyr configuration
+zephyr/.config
+zephyr/include/generated/
+zephyr/modules/
+zephyr/boards/
+zephyr/misc/
+# CMake cache and build system files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
+
+# =====================================================
+# Zephyr-specific generated files
+# =====================================================
+.prj.conf
+zephyr/zephyr.dts
+zephyr/zephyr.elf
+zephyr/zephyr.hex
+zephyr/zephyr.map
+
+# =====================================================
+# ROS 2
+# =====================================================
+install/
+log/
+build_ros2/
+build_ros/
+colcon/
+.colcon/
+.colcon_install_cache/
+**/install/
+**/build/
+**/log/
+launch/*.pyc
+rosdep.yaml
+ament_index/
+
+# =====================================================
+# VSCode / CLion / IDEs
+# =====================================================
+.vscode/
+.idea/
+*.iml
+*.code-workspace
+
+# =====================================================
+# Python virtual environments
+# =====================================================
+venv/
+.venv/
+env/
+.env/
+zenv
+.zenv/
+
+# =====================================================
+# Other
+# =====================================================
+# Local configuration or secrets
+*.env
+*.local
+*.cfg
+*.conf

@@ -16,6 +16,14 @@ This project was inspired by my experience during a Robot Navigation course at u
 
 Here, you will find examples, tutorials, and solutions to common issues that I have developed throughout my learning journey.
 
+## Table of Contents
+- [About This Repository](#about-this-repository)
+- [Requirements](#requirements)
+- [Zephyr Setup](#zephyr-setup)
+  - [Install dependencies](#install-dependencies)
+  - [Get Zephyr and install Python dependencies](#get-zephyr-and-install-python-dependencies)
+- [For Espressif Boards](#for-espressif-boards)
+
 ## Requirements
 - ROS2 Jazzy (for running micro-ROS Agent)
 - Python 3.10+  
@@ -91,4 +99,11 @@ west zephyr-export
 Use West to install the required Python packages:
 ```bash
 west packages pip --install
+```
+
+# For Espressif Boards
+
+If you are building for an Espressif board (e.g., ESP32, ESP32-C3, ESP32-S3, ESP32-C6), it is necessary to run the following command:
+```bash
+west blobs fetch hal_espressif
 ```

@@ -49,7 +49,6 @@ Makefile
 # =====================================================
 # Zephyr-specific generated files
 # =====================================================
-.prj.conf
 zephyr/zephyr.dts
 zephyr/zephyr.elf
 zephyr/zephyr.hex
@@ -97,4 +96,3 @@ zenv
 *.env
 *.local
 *.cfg
-*.conf

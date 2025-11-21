@@ -1,0 +1,34 @@
+menu "WiFi Settings"
+
+config WIFI_SSID
+    string "WiFi SSID"
+    default "MY_WIFI"
+    help
+      Nome da rede WiFi a ser usada pelo ESP32-C6.
+
+config WIFI_PASSWORD
+    string "WiFi Password"
+    default "12345678"
+    help
+      Senha da rede WiFi.
+
+endmenu
+
+menu "MicroROS Agent Settings"
+
+config AGENT_IP
+    string "My Agent MicroROS IPV4"
+    default "192.168.1.16"
+    help
+      Ip do Agente MicroROS.
+
+config AGENT_PORT
+    string "My Agent MicroROS UDP Port"
+    default "8888"
+    help
+      Porta UDP onde o agente MicroROS está rodando.
+
+endmenu
+
+source "Kconfig.zephyr"
+
